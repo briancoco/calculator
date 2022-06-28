@@ -4,6 +4,8 @@
     background-color: blue;
     width: 500px;
     height: 750px;
+    border: 3px solid black;
+    border-radius : 6px;
 }
 .display {
     width: 500px;
@@ -13,7 +15,7 @@
 .body {
     display: flex;
 }
-.numbers {
+/*.numbers {
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
@@ -31,3 +33,4 @@
 button {
     padding:30px;
 }
+*/

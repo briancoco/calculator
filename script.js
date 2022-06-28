@@ -53,6 +53,12 @@ const six = document.querySelector('.num6')
 const seven = document.querySelector('.num7')
 const eight = document.querySelector('.num8')
 const nine = document.querySelector('.num9')
+const deci = document.querySelector('.decimal');
+
+deci.addEventListener('click', () => {
+    displayText += '.';
+    displayResult(displayText);
+});
 
 zero.addEventListener('click', () => {
     displayText += 0;
@@ -120,28 +126,28 @@ clear.addEventListener('click', () => {
 });
 
 multi.addEventListener('click', () => {
-    num1 = parseInt(displayText);
+    num1 = Number(displayText);
     op = '*';
     displayText = '';
     displayResult(displayText);
 });
 
 div.addEventListener('click', () => {
-    num1 = parseInt(displayText);
+    num1 = Number(displayText);
     op = '/';
     displayText = '';
     displayResult(displayText);
 });
 
 sub.addEventListener('click', () => {
-    num1 = parseInt(displayText);
+    num1 = Number(displayText);
     op = '-';
     displayText = '';
     displayResult(displayText);
 });
 
 addition.addEventListener('click', () => {
-    num1 = parseInt(displayText);
+    num1 = Number(displayText);
     op = '+';
     displayText = '';
     displayResult(displayText);
