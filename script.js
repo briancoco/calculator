@@ -40,9 +40,10 @@ function displayResult(num) {
 }
 
 let displayText = '';
-let num1;
-let num2;
+let num1 = 0;
+let num2 = 0;
 let op;
+const zero = document.querySelector('.num0');
 const one = document.querySelector('.num1')
 const two = document.querySelector('.num2')
 const three = document.querySelector('.num3')
@@ -52,6 +53,11 @@ const six = document.querySelector('.num6')
 const seven = document.querySelector('.num7')
 const eight = document.querySelector('.num8')
 const nine = document.querySelector('.num9')
+
+zero.addEventListener('click', () => {
+    displayText += 0;
+    displayResult(displayText);
+});
 
 one.addEventListener('click', () => {
     displayText += 1;
@@ -143,7 +149,13 @@ addition.addEventListener('click', () => {
 
 equals.addEventListener('click', () => {
     num2 = parseInt(displayText);
-    let result = operate(op, num1, num2)
-    displayResult(result);
+    if((num2 === 0 && op === '/') || isNaN(num1)) {
+        displayText = '';
+        displayResult("ERROR");
+    }
+    else {
+        displayText ='' + operate(op, num1, num2);
+        displayResult(displayText);
+    }
 })
 
