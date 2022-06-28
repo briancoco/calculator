@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 500px;
+    height: 750px;
+}
+.display {
+    width: 500px;
+    height: 100px;
+    background-color: black;
+}
+.body {
+    display: flex;
+}
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 400px;
+}
+.operators {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+button {
+    padding:30px;
+}
