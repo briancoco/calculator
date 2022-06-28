@@ -2,18 +2,30 @@
     display: flex;
     flex-direction: column;
     background-color: blue;
-    width: 500px;
-    height: 750px;
+    width: 350px;
+    height: 550px;
     border: 3px solid black;
     border-radius : 6px;
+    padding: 30px;
 }
 .display {
-    width: 500px;
-    height: 100px;
+    width: 350px;
+    height: 150px;
     background-color: grey;
+    border-radius : 10px;
 }
 .body {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 650px;
+    padding: 10px;
+}
+
+button {
+    padding:30px;
 }
 /*.numbers {
     display: flex;

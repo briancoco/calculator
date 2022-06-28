@@ -156,8 +156,8 @@ addition.addEventListener('click', () => {
 equals.addEventListener('click', () => {
     num2 = parseInt(displayText);
     if((num2 === 0 && op === '/') || isNaN(num1)) {
-        displayText = '';
-        displayResult("ERROR");
+        displayText = 'ERROR';
+        displayResult(displayText);
     }
     else {
         displayText ='' + operate(op, num1, num2);
